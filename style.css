@@ -1,0 +1,87 @@
+/* resetCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+
+/* header */
+header{
+  background-color: #FF9A4B;
+  height: 50px;
+}
+
+/* main */
+
+.content{
+  display: flex;
+  width: 960px;
+  margin: 50px auto;
+}
+
+.content-box{
+  position: relative;
+  width: 300px;
+  padding: 10px;
+  background-color: #EEE;
+}
+.content-box:nth-child(2){
+  margin-left: 30px;
+}
+.content-box:nth-child(3){
+  margin-left: 30px;
+}
+
+.back-img{
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+.img-1{
+  background-image: url(img/flow01.png);
+}
+.img-2{
+  background-image: url(img/flow02.png);
+}
+.img-3{
+  background-image: url(img/flow03.png);
+}
+
+li span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FF9A4B;
+  color: #FFF;
+}
+li h3{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* footer */
+footer{
+  background-color: #AAA;
+  height: 50px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 768px){
+  .content{
+    flex-direction: column;
+    width: 100%;
+  }
+  .content-box{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .content-box:nth-child(2){
+    margin: 20px auto 20px;
+  }
+  .content-box:nth-child(3){
+    margin: 0 auto;
+  }
+}
